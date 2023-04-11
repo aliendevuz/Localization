@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingHorizontal="32dp"
+    android:paddingVertical="54dp"
+    tools:context=".activity.MainActivity">
+
+    <Button
+        android:id="@+id/button_chinese"
+        android:text="@string/str_chinese"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/button_korean"
+        android:layout_marginTop="10dp"
+        android:text="@string/str_korean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/button_japanese"
+        android:layout_marginTop="10dp"
+        android:text="@string/str_japanese"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="VisualLintButtonSize" />
+
+    <Button
+        android:id="@+id/button_uzbek"
+        android:layout_marginTop="10dp"
+        android:text="@string/str_uzbek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="VisualLintButtonSize" />
+
+</LinearLayout>

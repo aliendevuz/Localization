@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mahalliylashtirish</string>
+    <string name="str_uzbek">O\'zbek tili</string>
+    <string name="str_chinese">Xitoy tili</string>
+    <string name="str_korean">Koreys tili</string>
+    <string name="str_japanese">Yapon tili</string>
+
+    <plurals name="my_cats">
+        <item quantity="one">Mening %s ta mushugim bor</item>
+        <item quantity="other">Mening %s ta mushuklarim bor</item>
+    </plurals>
+
+</resources>
