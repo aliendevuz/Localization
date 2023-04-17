@@ -2,6 +2,7 @@ package com.example.localization.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.example.localization.BuildConfig
 import com.example.localization.databinding.ActivityLanguageBinding
 import timber.log.Timber
 import java.util.*
@@ -15,6 +16,7 @@ class LanguageActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLanguageBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        if (BuildConfig.DEBUG) if (Timber.treeCount == 0) Timber.plant(Timber.DebugTree())
         init()
     }
 

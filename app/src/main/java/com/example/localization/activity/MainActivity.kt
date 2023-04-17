@@ -3,9 +3,7 @@ package com.example.localization.activity
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.viewbinding.BuildConfig
 import com.example.localization.databinding.ActivityMainBinding
-import timber.log.Timber
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,7 +14,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        if (BuildConfig.DEBUG) Timber.plant(Timber.DebugTree())
         init()
     }
 
