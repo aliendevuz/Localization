@@ -1,5 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">현지화</string>
+    <string name="open">열려 있는</string>
     <string name="str_uzbek">우즈벡</string>
     <string name="str_chinese">중국인</string>
     <string name="str_korean">한국인</string>

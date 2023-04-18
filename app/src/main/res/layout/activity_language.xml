@@ -3,40 +3,74 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
     android:orientation="vertical"
     android:paddingHorizontal="32dp"
     android:paddingVertical="54dp"
     tools:context=".activity.MainActivity">
 
-    <Button
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
         android:id="@+id/button_chinese"
         android:text="@string/str_chinese"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:spinning_bar_color="@color/white"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp"
+        app:initialCornerAngle="54dp"
+        app:finalCornerAngle="54dp"
+        android:background="@drawable/circular_border_shape"
+        android:paddingHorizontal="24dp"
         tools:ignore="VisualLintButtonSize" />
 
-    <Button
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
         android:id="@+id/button_korean"
         android:layout_marginTop="10dp"
         android:text="@string/str_korean"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:spinning_bar_color="@color/white"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp"
+        app:initialCornerAngle="54dp"
+        app:finalCornerAngle="54dp"
+        android:background="@drawable/circular_border_shape"
+        android:paddingHorizontal="24dp"
         tools:ignore="VisualLintButtonSize" />
 
-    <Button
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
         android:id="@+id/button_japanese"
         android:layout_marginTop="10dp"
         android:text="@string/str_japanese"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:spinning_bar_color="@color/white"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp"
+        app:initialCornerAngle="54dp"
+        app:finalCornerAngle="54dp"
+        android:background="@drawable/circular_border_shape"
+        android:paddingHorizontal="24dp"
         tools:ignore="VisualLintButtonSize" />
 
-    <Button
+    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
         android:id="@+id/button_uzbek"
         android:layout_marginTop="10dp"
         android:text="@string/str_uzbek"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:spinning_bar_color="@color/white"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp"
+        app:initialCornerAngle="54dp"
+        app:finalCornerAngle="54dp"
+        android:background="@drawable/circular_border_shape"
+        android:paddingHorizontal="24dp"
         tools:ignore="VisualLintButtonSize" />
 
 </LinearLayout>

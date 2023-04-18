@@ -1,10 +1,14 @@
 package com.example.localization.activity
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
+import com.example.localization.R
 import com.example.localization.databinding.ActivityMainBinding
 
+@Suppress("DEPRECATION")
 class MainActivity : AppCompatActivity() {
 
     private val context = this
@@ -17,11 +21,17 @@ class MainActivity : AppCompatActivity() {
         init()
     }
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     private fun init() {
         val buttonOpen = binding.buttonOpen
         buttonOpen.setOnClickListener {
-            val intent = Intent(context, LanguageActivity::class.java)
-            startActivity(intent)
+            buttonOpen.startAnimation()
+            Handler().postDelayed( {
+                buttonOpen.revertAnimation()
+                buttonOpen.setBackgroundDrawable(getDrawable(R.drawable.circular_border_shape))
+                val intent = Intent(context, LanguageActivity::class.java)
+                startActivity(intent)
+            }, 1400L)
         }
     }
 }
