@@ -7,14 +7,17 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.os.LocaleListCompat
 import com.example.localization.BuildConfig
+import com.example.localization.MyApplication
 import com.example.localization.R
 import com.example.localization.databinding.ActivityLanguageBinding
 import timber.log.Timber
+import com.example.localization.manager.LocaleManager
 import java.util.*
 
 @Suppress("DEPRECATION")
 class LanguageActivity : AppCompatActivity() {
 
+    private val context = this
     private lateinit var binding: ActivityLanguageBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,7 +40,8 @@ class LanguageActivity : AppCompatActivity() {
             Handler().postDelayed( {
                 buttonChinese.revertAnimation()
                 buttonChinese.setBackgroundDrawable(getDrawable(R.drawable.circular_border_shape))
-                setLocale("zh")
+                MyApplication.localeManager!!.setNewLocale(context, LocaleManager.LANGUAGE_CHINESE)
+                finish()
             }, 400L)
         }
 
@@ -46,7 +50,8 @@ class LanguageActivity : AppCompatActivity() {
             Handler().postDelayed( {
                 buttonKorean.revertAnimation()
                 buttonKorean.setBackgroundDrawable(getDrawable(R.drawable.circular_border_shape))
-                setLocale("ko")
+                MyApplication.localeManager!!.setNewLocale(context, LocaleManager.LANGUAGE_KOREAN)
+                finish()
             }, 400L)
         }
 
@@ -55,7 +60,8 @@ class LanguageActivity : AppCompatActivity() {
             Handler().postDelayed( {
                 buttonJapanese.revertAnimation()
                 buttonJapanese.setBackgroundDrawable(getDrawable(R.drawable.circular_border_shape))
-                setLocale("ja")
+                MyApplication.localeManager!!.setNewLocale(context, LocaleManager.LANGUAGE_JAPAN)
+                finish()
             }, 400L)
         }
 
@@ -64,14 +70,10 @@ class LanguageActivity : AppCompatActivity() {
             Handler().postDelayed( {
                 buttonUzbek.revertAnimation()
                 buttonUzbek.setBackgroundDrawable(getDrawable(R.drawable.circular_border_shape))
-                setLocale("uz")
+                MyApplication.localeManager!!.setNewLocale(context, LocaleManager.LANGUAGE_UZBEK)
+                finish()
             }, 400L)
         }
     }
 
-    private fun setLocale(lan: String) {
-        val appLocale: LocaleListCompat = LocaleListCompat.forLanguageTags (lan)
-        AppCompatDelegate.setApplicationLocales (appLocale)
-        finish()
-    }
 }
