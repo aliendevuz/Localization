@@ -25,11 +25,11 @@ class PreferenceActivity : AppCompatActivity() {
 
         buttonSave.setOnClickListener {
             val stringEmail = editTextEmail.text.toString().trim()
-            PreferencesManager.getInstance(context).saveData("email", stringEmail)
+            PreferencesManager.getInstance(context).saveString("email", stringEmail)
         }
 
         buttonLoad.setOnClickListener {
-            textViewEmail.text = PreferencesManager.getInstance(context).loadData("email")
+            textViewEmail.text = PreferencesManager.getInstance(context).loadString("email")
         }
     }
 }

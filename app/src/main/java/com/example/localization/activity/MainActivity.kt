@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun init() {
         val buttonOpen = binding.buttonOpen
-        buttonOpen.setOnClickListener { openActivity(LanguageActivity::class.java) }
+        buttonOpen.setOnClickListener { openActivity(SaveActivity::class.java) }
     }
 
     private fun openActivity(activity: Class<*>) {

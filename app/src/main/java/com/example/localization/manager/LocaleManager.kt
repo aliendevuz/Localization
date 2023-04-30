@@ -24,10 +24,10 @@ class LocaleManager(context: Context) {
         }
     }
 
-    private val language = if (preferences.loadData(LANGUAGE_KEY) != "null") preferences.loadData(LANGUAGE_KEY) else LANGUAGE_UZBEK
+    private val language = if (preferences.loadString(LANGUAGE_KEY) != "null") preferences.loadString(LANGUAGE_KEY) else LANGUAGE_UZBEK
 
     private fun persistLanguage(language: String) {
-        preferences.saveData(LANGUAGE_KEY, language)
+        preferences.saveString(LANGUAGE_KEY, language)
     }
 
     fun setLocale(context: Context): Context {
