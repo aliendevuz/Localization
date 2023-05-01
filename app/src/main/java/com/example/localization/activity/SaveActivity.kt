@@ -53,10 +53,10 @@ class SaveActivity : AppCompatActivity() {
         }
 
         buttonLoadData.setOnClickListener {
-            val getData = "Long:\t\t\t\t" + preferences.loadLong(keyLong).toString() + "L\n" +
-            "Boolean:\t\t" + preferences.loadBoolean(keyBoolean).toString() + "\n" +
-            "Integer:\t\t" + preferences.loadInteger(keyInteger).toString() + "\n" +
-            "Double:\t\t" + preferences.loadDouble(keyDouble).toString()
+            val getData = "Long:\t\t\t\t${preferences.loadLong(keyLong)}L\n"
+                "Boolean:\t\t${preferences.loadBoolean(keyBoolean)}\n" +
+                "Integer:\t\t${preferences.loadInteger(keyInteger)}\n" +
+                "Double:\t\t${preferences.loadDouble(keyDouble)}"
             textViewData.text = getData
         }
     }
