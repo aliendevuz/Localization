@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_text_fullname_of_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fullname"
+        android:inputType="textPersonName"
+        tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/edit_text_age_of_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Age"
+        android:inputType="phone"
+        tools:ignore="Autofill,HardcodedText,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/button_save_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save member"
+        android:layout_marginTop="10dp"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+
+    <TextView
+        android:id="@+id/text_view_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="#40808080"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="8dp"
+        android:text="Object:\nnull"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText,TextContrastCheck" />
+
+    <Button
+        android:id="@+id/button_load_member"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Load member"
+        android:layout_marginTop="10dp"
+        tools:ignore="HardcodedText,VisualLintButtonSize" />
+
+</LinearLayout>

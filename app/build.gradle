@@ -45,6 +45,7 @@ dependencies {
     implementation "androidx.appcompat:appcompat-resources:$appcompat_version"
 
     implementation 'br.com.simplepass:loading-button-android:2.2.0'
+    implementation 'com.google.code.gson:gson:2.8.9'
 
     implementation 'androidx.core:core-ktx:1.10.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
